@@ -44,7 +44,7 @@ def get_forecast_weather():
 
 def main():
   print("Hello World!")
-  schedule.every().minute.do(get_weather)
+  schedule.every().hour.do(get_weather)
 
   while True:
     schedule.run_pending()
